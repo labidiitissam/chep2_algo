@@ -1,0 +1,31 @@
+
+ALGORITHM comparison_array
+VAR
+ tab1:array of integer[5];
+ tab2:array of integer[5];
+ test,false:BOOLEAN;
+ sum:INTEGER :=0;
+ n:integer;
+BEGIN
+  FOR i FROM 0 in 4 DO
+      FOR j FROM in 4 DO
+       IF (a1[i] = a2[j]) THEN
+       test:= TRUE;
+      BREAK;
+       ELSE 
+       sum := sum +a1[i];
+  END_IF
+       test := FALSE.
+END FOR
+END FOR
+   
+   FOR i FROM 0 in 4 DO
+      FOR j FROM in 4 DO
+     IF (a2[j] = a1[i]) THEN
+           test:= TRUE;
+           BREAK;
+            ELSE 
+       sum := sum +a2[i];
+     END IF
+    test := FALSE;
+    END FOR
